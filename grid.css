@@ -1,0 +1,54 @@
+main {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "box1 box2 box3 sidebar"
+    "main-content main-content main-content sidebar"
+    "footer footer footer footer";
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 120px 200px 300px 100px;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: bisque;
+  grid-area: header;
+}
+.box1 {
+  background-color: green;
+  grid-area: box1;
+}
+.box2 {
+  background-color: greenyellow;
+  grid-area: box2;
+}
+.box3 {
+  background-color: gold;
+  grid-area: box3;
+}
+
+.main-content {
+  background-color: pink;
+  grid-area: main-content;
+}
+
+.sidebar {
+  background-color: red;
+  grid-area: sidebar;
+}
+
+nav {
+  background-color: cadetblue;
+  grid-area: nav;
+}
+
+footer {
+  background-color: dodgerblue;
+  grid-area: footer;
+}
